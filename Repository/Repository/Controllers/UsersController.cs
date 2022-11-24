@@ -15,10 +15,12 @@ namespace Repository.Controllers
     public class UsersController : ControllerBase
     {
         private readonly UserContext _context;
+        private readonly ILogger<UsersController> _logger;
 
-        public UsersController(UserContext context)
+        public UsersController(UserContext context, ILogger<UsersController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET: api/Users
@@ -47,6 +49,8 @@ namespace Repository.Controllers
             {
                 return NotFound();
             }
+
+            _logger.LogInformation("Retrieved {@User}", user);
 
             return UserToGetDTO(user);
         }

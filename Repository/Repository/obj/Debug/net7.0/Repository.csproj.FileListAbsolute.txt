@@ -277,3 +277,15 @@ C:\Users\jakl\Desktop\assignment\Repository\Repository\obj\Debug\net7.0\Reposito
 C:\Users\jakl\Desktop\assignment\Repository\Repository\obj\Debug\net7.0\Repository.genruntimeconfig.cache
 C:\Users\jakl\Desktop\assignment\Repository\Repository\obj\Debug\net7.0\ref\Repository.dll
 C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\System.Web.Helpers.Crypto.dll
+C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\Serilog.dll
+C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\Serilog.AspNetCore.dll
+C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\Masking.Serilog.dll
+C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\Serilog.Enrichers.ClientInfo.dll
+C:\Users\jakl\Desktop\assignment\Repository\Repository\bin\Debug\net7.0\Serilog.Enrichers.Environment.dll
