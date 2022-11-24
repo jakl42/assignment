@@ -12,7 +12,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.0",
-          "Swashbuckle.AspNetCore": "6.4.0"
+          "Swashbuckle.AspNetCore": "6.4.0",
+          "System.Web.Helpers.Crypto": "3.2.3"
         },
         "runtime": {
           "Repository.dll": {}
@@ -2337,6 +2338,14 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Web.Helpers.Crypto/3.2.3": {
+        "runtime": {
+          "lib/net40/System.Web.Helpers.Crypto.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.2.3.0"
+          }
+        }
+      },
       "System.Windows.Extensions/6.0.0": {
         "dependencies": {
           "System.Drawing.Common": "6.0.0"
@@ -3700,6 +3709,13 @@
       "sha512": "sha512-Z6YfyYTCg7lOZjJzBjONJTFKGN9/NIYKSxhU5GRd+DTwHSZyvWp1xuI5aR+dLg+ayyC5Xv57KiY4oJ0tMO89fQ==",
       "path": "system.threading.timer/4.3.0",
       "hashPath": "system.threading.timer.4.3.0.nupkg.sha512"
+    },
+    "System.Web.Helpers.Crypto/3.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Kpf+faYrakOcPGMkhyA+jG1D7cyOqIwS9B35cfh8Fc5jf2lVMhxRQpDWhwNGmgZw+PBAQ1TfZMGBRojD1Glp5Q==",
+      "path": "system.web.helpers.crypto/3.2.3",
+      "hashPath": "system.web.helpers.crypto.3.2.3.nupkg.sha512"
     },
     "System.Windows.Extensions/6.0.0": {
       "type": "package",

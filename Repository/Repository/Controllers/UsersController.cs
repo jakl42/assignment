@@ -6,10 +6,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Repository.Models;
+using System.Web.Helpers;
 
 namespace Repository.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Users")]
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -22,23 +23,24 @@ namespace Repository.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<UserGetDTO>>> GetUsers()
         {
-          if (_context.Users == null)
-          {
-              return NotFound();
-          }
-            return await _context.Users.ToListAsync();
+            if (_context.Users == null)
+            {
+                return NotFound();
+            }
+
+            return await _context.Users.Select(x => UserToGetDTO(x)).ToListAsync();
         }
 
         // GET: api/Users/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(long id)
+        public async Task<ActionResult<UserGetDTO>> GetUser(long id)
         {
-          if (_context.Users == null)
-          {
-              return NotFound();
-          }
+            if (_context.Users == null)
+            {
+                return NotFound();
+            }
             var user = await _context.Users.FindAsync(id);
 
             if (user == null)
@@ -46,7 +48,7 @@ namespace Repository.Controllers
                 return NotFound();
             }
 
-            return user;
+            return UserToGetDTO(user);
         }
 
         // PUT: api/Users/5
@@ -59,6 +61,7 @@ namespace Repository.Controllers
                 return BadRequest();
             }
 
+            user.Password = Crypto.HashPassword(user.Password);
             _context.Entry(user).State = EntityState.Modified;
 
             try
@@ -83,16 +86,28 @@ namespace Repository.Controllers
         // POST: api/Users
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<User>> PostUser(User user)
+        public async Task<ActionResult<UserPostDTO>> PostUser(UserPostDTO userDTO)
         {
-          if (_context.Users == null)
-          {
-              return Problem("Entity set 'UserContext.Users'  is null.");
-          }
+            if (_context.Users == null)
+            {
+                return Problem("Entity set 'UserContext.Users'  is null.");
+            }
+
+            var user = new User
+            {
+                UserName = userDTO.UserName,
+                FullName = userDTO.FullName,
+                Email = userDTO.Email,
+                MobileNumber = userDTO.MobileNumber,
+                Language = userDTO.Language,
+                Culture = userDTO.Culture,
+                Password = Crypto.HashPassword(userDTO.Password)
+            };
+
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUser", new { id = user.Id }, user);
+            return CreatedAtAction(nameof(GetUser), new { id = user.Id }, UserToGetDTO(user));
         }
 
         // DELETE: api/Users/5
@@ -115,9 +130,47 @@ namespace Repository.Controllers
             return NoContent();
         }
 
+        // POST: api/Users/5/validate
+        [HttpPost("{id}/validate")]
+        public async Task<ActionResult<UserValidateDTO>> PostUserPassword(long id, UserValidateDTO userDTO)
+        {
+            if (id != userDTO.Id)
+            {
+                return BadRequest();
+            }
+
+            var user = await _context.Users.FindAsync(id);
+
+            if (userDTO.UserName != user.UserName)
+            {
+                return BadRequest();
+            }
+
+            if (Crypto.VerifyHashedPassword(user.Password, userDTO.Password))
+            {
+                return Ok();
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
         private bool UserExists(long id)
         {
             return (_context.Users?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+        private static UserGetDTO UserToGetDTO(User user) =>
+            new UserGetDTO
+            {
+                Id = user.Id,
+                UserName = user.UserName,
+                FullName = user.FullName,
+                Email = user.Email,
+                MobileNumber = user.MobileNumber,
+                Language = user.Language,
+                Culture = user.Culture
+            };
     }
 }
