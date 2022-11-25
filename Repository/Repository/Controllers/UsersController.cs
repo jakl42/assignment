@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Repository.Models;
 using System.Web.Helpers;
+using System.Net.Http;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using Azure.Core;
 
 namespace Repository.Controllers
 {
@@ -27,6 +31,8 @@ namespace Repository.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<UserGetDTO>>> GetUsers()
         {
+            _logger.LogInformation("Log message for GET: api/Users");
+
             if (_context.Users == null)
             {
                 return NotFound();
@@ -39,6 +45,8 @@ namespace Repository.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<UserGetDTO>> GetUser(long id)
         {
+            _logger.LogInformation("Log message for GET: api/Users/id");
+
             if (_context.Users == null)
             {
                 return NotFound();
@@ -50,16 +58,16 @@ namespace Repository.Controllers
                 return NotFound();
             }
 
-            _logger.LogInformation("Retrieved {@User}", user);
-
             return UserToGetDTO(user);
         }
-
+        
         // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(long id, User user)
         {
+            _logger.LogInformation("Log message for PUT: api/Users/id");
+
             if (id != user.Id)
             {
                 return BadRequest();
@@ -84,6 +92,8 @@ namespace Repository.Controllers
                 }
             }
 
+            _logger.LogInformation("Updated user {@User}", user);
+
             return NoContent();
         }
 
@@ -92,6 +102,8 @@ namespace Repository.Controllers
         [HttpPost]
         public async Task<ActionResult<UserPostDTO>> PostUser(UserPostDTO userDTO)
         {
+            _logger.LogInformation("Log message for POST: api/Users");
+
             if (_context.Users == null)
             {
                 return Problem("Entity set 'UserContext.Users'  is null.");
@@ -111,6 +123,8 @@ namespace Repository.Controllers
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
+            _logger.LogInformation("Added user {@User}", user);
+
             return CreatedAtAction(nameof(GetUser), new { id = user.Id }, UserToGetDTO(user));
         }
 
@@ -118,6 +132,8 @@ namespace Repository.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(long id)
         {
+            _logger.LogInformation("Log message for DELETE: api/Users/id");
+
             if (_context.Users == null)
             {
                 return NotFound();
@@ -131,6 +147,8 @@ namespace Repository.Controllers
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
 
+            _logger.LogInformation("Deleted user {@User}", user);
+
             return NoContent();
         }
 
@@ -138,6 +156,8 @@ namespace Repository.Controllers
         [HttpPost("{id}/validate")]
         public async Task<ActionResult<UserValidateDTO>> PostUserPassword(long id, UserValidateDTO userDTO)
         {
+            _logger.LogInformation("Log message for api/Users/id/validate");
+
             if (id != userDTO.Id)
             {
                 return BadRequest();
@@ -152,6 +172,7 @@ namespace Repository.Controllers
 
             if (Crypto.VerifyHashedPassword(user.Password, userDTO.Password))
             {
+                _logger.LogInformation("Validated user's password {@User}", user);
                 return Ok();
             }
             else

@@ -1,0 +1,172 @@
+[2022-11-25 00:26:31 INF]  [] WINDOWS Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2022-11-25 00:26:31 INF]  [] WINDOWS Now listening on: https://localhost:7070
+[2022-11-25 00:26:31 INF]  [] WINDOWS Now listening on: http://localhost:5117
+[2022-11-25 00:26:31 INF]  [] WINDOWS Application started. Press Ctrl+C to shut down.
+[2022-11-25 00:26:31 INF]  [] WINDOWS Hosting environment: Development
+[2022-11-25 00:26:31 INF]  [] WINDOWS Content root path: C:\Users\jakl\Desktop\assignment\Repository\Repository
+[2022-11-25 00:35:13 INF]  [] WINDOWS Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2022-11-25 00:35:13 INF]  [] WINDOWS Now listening on: https://localhost:7070
+[2022-11-25 00:35:13 INF]  [] WINDOWS Now listening on: http://localhost:5117
+[2022-11-25 00:35:13 INF]  [] WINDOWS Application started. Press Ctrl+C to shut down.
+[2022-11-25 00:35:13 INF]  [] WINDOWS Hosting environment: Development
+[2022-11-25 00:35:13 INF]  [] WINDOWS Content root path: C:\Users\jakl\Desktop\assignment\Repository\Repository
+[2022-11-25 00:35:14 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 GET https://localhost:7070/swagger/index.html - -
+[2022-11-25 00:35:14 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 GET https://localhost:7070/swagger/index.html - - - 200 - text/html;charset=utf-8 121.8189ms
+[2022-11-25 00:35:14 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 GET https://localhost:7070/_framework/aspnetcore-browser-refresh.js - -
+[2022-11-25 00:35:14 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 GET https://localhost:7070/_vs/browserLink - -
+[2022-11-25 00:35:14 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 GET https://localhost:7070/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 2.5726ms
+[2022-11-25 00:35:14 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 GET https://localhost:7070/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.5402ms
+[2022-11-25 00:35:14 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 GET https://localhost:7070/swagger/v1/swagger.json - -
+[2022-11-25 00:35:14 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 GET https://localhost:7070/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 61.1769ms
+[2022-11-25 00:49:48 INF]  [] WINDOWS Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2022-11-25 00:49:48 INF]  [] WINDOWS Now listening on: https://localhost:7070
+[2022-11-25 00:49:48 INF]  [] WINDOWS Now listening on: http://localhost:5117
+[2022-11-25 00:49:48 INF]  [] WINDOWS Application started. Press Ctrl+C to shut down.
+[2022-11-25 00:49:48 INF]  [] WINDOWS Hosting environment: Development
+[2022-11-25 00:49:48 INF]  [] WINDOWS Content root path: C:\Users\jakl\Desktop\assignment\Repository\Repository
+[2022-11-25 00:49:48 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 GET https://localhost:7070/swagger/index.html - -
+[2022-11-25 00:49:48 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 GET https://localhost:7070/swagger/index.html - - - 200 - text/html;charset=utf-8 115.9292ms
+[2022-11-25 00:49:48 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 GET https://localhost:7070/_vs/browserLink - -
+[2022-11-25 00:49:48 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 GET https://localhost:7070/_framework/aspnetcore-browser-refresh.js - -
+[2022-11-25 00:49:48 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 GET https://localhost:7070/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 2.4001ms
+[2022-11-25 00:49:48 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 GET https://localhost:7070/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.5119ms
+[2022-11-25 00:49:49 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 GET https://localhost:7070/swagger/v1/swagger.json - -
+[2022-11-25 00:49:49 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 GET https://localhost:7070/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 55.1539ms
+[2022-11-25 00:50:02 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 GET https://localhost:7070/api/Users - -
+[2022-11-25 00:50:02 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing endpoint 'Repository.Controllers.UsersController.GetUsers (Repository)'
+[2022-11-25 00:50:02 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Repository.Models.UserGetDTO]]] GetUsers() on controller Repository.Controllers.UsersController (Repository).
+[2022-11-25 00:50:02 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Log message for GET: api/Users
+[2022-11-25 00:50:02 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Culture], [u].[Email], [u].[FullName], [u].[Language], [u].[MobileNumber], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+[2022-11-25 00:50:02 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Repository.Models.UserGetDTO, Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-11-25 00:50:02 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed action Repository.Controllers.UsersController.GetUsers (Repository) in 98.1055ms
+[2022-11-25 00:50:02 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed endpoint 'Repository.Controllers.UsersController.GetUsers (Repository)'
+[2022-11-25 00:50:02 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 GET https://localhost:7070/api/Users - - - 200 - application/json;+charset=utf-8 114.0498ms
+[2022-11-25 00:50:26 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 GET https://localhost:7070/api/Users/4 - -
+[2022-11-25 00:50:26 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing endpoint 'Repository.Controllers.UsersController.GetUser (Repository)'
+[2022-11-25 00:50:27 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Route matched with {action = "GetUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Repository.Models.UserGetDTO]] GetUser(Int64) on controller Repository.Controllers.UsersController (Repository).
+[2022-11-25 00:50:27 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Log message for GET: api/Users/id
+[2022-11-25 00:50:27 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Culture], [u].[Email], [u].[FullName], [u].[Language], [u].[MobileNumber], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__p_0
+[2022-11-25 00:50:27 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing ObjectResult, writing value of type 'Repository.Models.UserGetDTO'.
+[2022-11-25 00:50:27 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed action Repository.Controllers.UsersController.GetUser (Repository) in 80.4834ms
+[2022-11-25 00:50:27 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed endpoint 'Repository.Controllers.UsersController.GetUser (Repository)'
+[2022-11-25 00:50:27 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 GET https://localhost:7070/api/Users/4 - - - 200 - application/json;+charset=utf-8 90.8719ms
+[2022-11-25 00:51:12 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 POST https://localhost:7070/api/Users application/json 198
+[2022-11-25 00:51:12 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing endpoint 'Repository.Controllers.UsersController.PostUser (Repository)'
+[2022-11-25 00:51:12 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Route matched with {action = "PostUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Repository.Models.UserPostDTO]] PostUser(Repository.Models.UserPostDTO) on controller Repository.Controllers.UsersController (Repository).
+[2022-11-25 00:51:12 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Log message for POST: api/Users
+[2022-11-25 00:51:12 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed DbCommand (16ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Culture], [Email], [FullName], [Language], [MobileNumber], [Password], [UserName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+[2022-11-25 00:51:12 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Added user {"Id":9,"UserName":"bostjan","FullName":"Bostjan Golob","Email":"bosti@example.com","MobileNumber":"014278976","Language":"slovenian","Culture":"music","Password":"******","$type":"User"}
+[2022-11-25 00:51:12 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing CreatedAtActionResult, writing value of type 'Repository.Models.UserGetDTO'.
+[2022-11-25 00:51:12 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed action Repository.Controllers.UsersController.PostUser (Repository) in 108.5892ms
+[2022-11-25 00:51:12 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed endpoint 'Repository.Controllers.UsersController.PostUser (Repository)'
+[2022-11-25 00:51:12 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 POST https://localhost:7070/api/Users application/json 198 - 201 - application/json;+charset=utf-8 111.3820ms
+[2022-11-25 00:52:36 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 PUT https://localhost:7070/api/Users/9 application/json 208
+[2022-11-25 00:52:36 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing endpoint 'Repository.Controllers.UsersController.PutUser (Repository)'
+[2022-11-25 00:52:36 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Route matched with {action = "PutUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutUser(Int64, Repository.Models.User) on controller Repository.Controllers.UsersController (Repository).
+[2022-11-25 00:52:36 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Log message for PUT: api/Users/id
+[2022-11-25 00:52:36 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed DbCommand (16ms) [Parameters=[@p7='?' (DbType = Int64), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [Culture] = @p0, [Email] = @p1, [FullName] = @p2, [Language] = @p3, [MobileNumber] = @p4, [Password] = @p5, [UserName] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+[2022-11-25 00:52:36 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Updated user {"Id":9,"UserName":"bostjancek","FullName":"Bostjan Golob","Email":"bosti@example.com","MobileNumber":"014278976","Language":"slovenian","Culture":"music","Password":"******","$type":"User"}
+[2022-11-25 00:52:36 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing StatusCodeResult, setting HTTP status code 204
+[2022-11-25 00:52:36 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed action Repository.Controllers.UsersController.PutUser (Repository) in 29.55ms
+[2022-11-25 00:52:36 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed endpoint 'Repository.Controllers.UsersController.PutUser (Repository)'
+[2022-11-25 00:52:36 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 PUT https://localhost:7070/api/Users/9 application/json 208 - 204 - - 34.7739ms
+[2022-11-25 00:52:44 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 GET https://localhost:7070/api/Users/9 - -
+[2022-11-25 00:52:44 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing endpoint 'Repository.Controllers.UsersController.GetUser (Repository)'
+[2022-11-25 00:52:44 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Route matched with {action = "GetUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Repository.Models.UserGetDTO]] GetUser(Int64) on controller Repository.Controllers.UsersController (Repository).
+[2022-11-25 00:52:44 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Log message for GET: api/Users/id
+[2022-11-25 00:52:44 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Culture], [u].[Email], [u].[FullName], [u].[Language], [u].[MobileNumber], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__p_0
+[2022-11-25 00:52:44 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing ObjectResult, writing value of type 'Repository.Models.UserGetDTO'.
+[2022-11-25 00:52:44 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed action Repository.Controllers.UsersController.GetUser (Repository) in 3.4656ms
+[2022-11-25 00:52:44 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed endpoint 'Repository.Controllers.UsersController.GetUser (Repository)'
+[2022-11-25 00:52:44 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 GET https://localhost:7070/api/Users/9 - - - 200 - application/json;+charset=utf-8 3.9273ms
+[2022-11-25 00:53:05 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 POST https://localhost:7070/api/Users/9/validate application/json 69
+[2022-11-25 00:53:05 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing endpoint 'Repository.Controllers.UsersController.PostUserPassword (Repository)'
+[2022-11-25 00:53:05 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Route matched with {action = "PostUserPassword", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Repository.Models.UserValidateDTO]] PostUserPassword(Int64, Repository.Models.UserValidateDTO) on controller Repository.Controllers.UsersController (Repository).
+[2022-11-25 00:53:05 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Log message for api/Users/id/validate
+[2022-11-25 00:53:05 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Culture], [u].[Email], [u].[FullName], [u].[Language], [u].[MobileNumber], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__p_0
+[2022-11-25 00:53:05 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+[2022-11-25 00:53:05 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed action Repository.Controllers.UsersController.PostUserPassword (Repository) in 6.3324ms
+[2022-11-25 00:53:05 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed endpoint 'Repository.Controllers.UsersController.PostUserPassword (Repository)'
+[2022-11-25 00:53:05 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 POST https://localhost:7070/api/Users/9/validate application/json 69 - 400 - application/problem+json;+charset=utf-8 9.3914ms
+[2022-11-25 00:53:45 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 POST https://localhost:7070/api/Users/9/validate application/json 65
+[2022-11-25 00:53:45 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing endpoint 'Repository.Controllers.UsersController.PostUserPassword (Repository)'
+[2022-11-25 00:53:45 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Route matched with {action = "PostUserPassword", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Repository.Models.UserValidateDTO]] PostUserPassword(Int64, Repository.Models.UserValidateDTO) on controller Repository.Controllers.UsersController (Repository).
+[2022-11-25 00:53:45 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Log message for api/Users/id/validate
+[2022-11-25 00:53:45 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Culture], [u].[Email], [u].[FullName], [u].[Language], [u].[MobileNumber], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__p_0
+[2022-11-25 00:53:45 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Validated user's password {"Id":9,"UserName":"bostjancek","FullName":"Bostjan Golob","Email":"bosti@example.com","MobileNumber":"014278976","Language":"slovenian","Culture":"music","Password":"******","$type":"User"}
+[2022-11-25 00:53:45 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing OkObjectResult, writing value of type 'System.String'.
+[2022-11-25 00:53:45 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed action Repository.Controllers.UsersController.PostUserPassword (Repository) in 3.3478ms
+[2022-11-25 00:53:45 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed endpoint 'Repository.Controllers.UsersController.PostUserPassword (Repository)'
+[2022-11-25 00:53:45 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 POST https://localhost:7070/api/Users/9/validate application/json 65 - 200 - text/plain;+charset=utf-8 3.8270ms
+[2022-11-25 00:55:01 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 DELETE https://localhost:7070/api/Users/9 - -
+[2022-11-25 00:55:01 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing endpoint 'Repository.Controllers.UsersController.DeleteUser (Repository)'
+[2022-11-25 00:55:01 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Route matched with {action = "DeleteUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteUser(Int64) on controller Repository.Controllers.UsersController (Repository).
+[2022-11-25 00:55:01 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Log message for DELETE: api/Users/id
+[2022-11-25 00:55:01 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Culture], [u].[Email], [u].[FullName], [u].[Language], [u].[MobileNumber], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__p_0
+[2022-11-25 00:55:01 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Users]
+OUTPUT 1
+WHERE [Id] = @p0;
+[2022-11-25 00:55:01 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Deleted user {"Id":9,"UserName":"bostjancek","FullName":"Bostjan Golob","Email":"bosti@example.com","MobileNumber":"014278976","Language":"slovenian","Culture":"music","Password":"******","$type":"User"}
+[2022-11-25 00:55:01 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing StatusCodeResult, setting HTTP status code 204
+[2022-11-25 00:55:01 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed action Repository.Controllers.UsersController.DeleteUser (Repository) in 9.1241ms
+[2022-11-25 00:55:01 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed endpoint 'Repository.Controllers.UsersController.DeleteUser (Repository)'
+[2022-11-25 00:55:01 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 DELETE https://localhost:7070/api/Users/9 - - - 204 - - 12.7589ms
+[2022-11-25 00:55:08 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request starting HTTP/2 GET https://localhost:7070/api/Users - -
+[2022-11-25 00:55:08 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing endpoint 'Repository.Controllers.UsersController.GetUsers (Repository)'
+[2022-11-25 00:55:08 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Repository.Models.UserGetDTO]]] GetUsers() on controller Repository.Controllers.UsersController (Repository).
+[2022-11-25 00:55:08 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Log message for GET: api/Users
+[2022-11-25 00:55:08 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Culture], [u].[Email], [u].[FullName], [u].[Language], [u].[MobileNumber], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+[2022-11-25 00:55:08 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Repository.Models.UserGetDTO, Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-11-25 00:55:08 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed action Repository.Controllers.UsersController.GetUsers (Repository) in 1.405ms
+[2022-11-25 00:55:08 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Executed endpoint 'Repository.Controllers.UsersController.GetUsers (Repository)'
+[2022-11-25 00:55:08 INF] ::1 [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36] WINDOWS Request finished HTTP/2 GET https://localhost:7070/api/Users - - - 200 - application/json;+charset=utf-8 1.7897ms
